@@ -8,9 +8,9 @@ function Ordenar(){
 }
 
 function CalculaMayorPalabra(array){
-    var mayor = array[0].length;
-    var indice;
-    for(var i=0;i<array.length;i++){
+    let mayor = array[0].length;
+    let indice;
+    for(let i=0;i<array.length;i++){
         if(array[i].length>=mayor){
             mayor=array[i].length;
             indice = i;
