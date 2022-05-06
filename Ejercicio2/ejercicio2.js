@@ -3,11 +3,11 @@ function Ordenar(){
       
         
     while(array.length>=1){
-        Mayor(array);
+        CalculaMayorPalabra(array);
     }
 }
 
-function Mayor(array){
+function CalculaMayorPalabra(array){
     var mayor = array[0].length;
     var indice;
     for(var i=0;i<array.length;i++){
