@@ -8,7 +8,7 @@ function Calcular() {
 }
 
 function CalcularAumento(sueldo, antiguedad){
-    let aumento = 0;
+    let aumento;
     let porcentaje;
     if (sueldo < 1000) {
         if (antiguedad > 10) {
@@ -37,7 +37,7 @@ function CalcularAumento(sueldo, antiguedad){
             }
         }
     }
-    
+
     aumento = sueldo * porcentaje;
 
     return aumento;   

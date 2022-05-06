@@ -1,7 +1,6 @@
 function Ordenar(){
     const array = document.getElementById("cadena").value.split(" ");
-      
-     
+           
     while(array.length>=1){
          let indice = CalculaMayorPalabra(array);
          console.log(array[indice])
