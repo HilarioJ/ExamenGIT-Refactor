@@ -1,6 +1,6 @@
 function Grupo (codigo, horario) {
     var grupo = new Object();
-    grupo.codigo = codigo;
+    this.codigo = codigo;
     grupo.horario = horario;
     grupo.alumnos = [];
     

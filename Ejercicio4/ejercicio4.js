@@ -1,25 +1,25 @@
-function Valida1(dni){
+function ValidaDni(dni){
     const res = /\d{2}\.\d{3}\.\d{3}-[A-Z]$/;
     return res.test(dni);
 }
-function Valida2(nombre){
+function ValidaNombre(nombre){
   const res = /^(?=.{3,15}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$/;
   return res.test(nombre);
 }
-function Valida3(apellido){
+function ValidaApellido(apellido){
     const res = /^(?=.{3,15}$)[A-ZÁÉÍÓÚ][a-zñáéíóú]+(?: [A-ZÁÉÍÓÚ][a-zñáéíóú]+)?$/;
     return res.test(apellido);
   }
-function Valida4(email)
+function ValidaEmail(email)
 {
     const res = /\S+@\S+\.\S+/;
     return res.test(email);
 }
-function Valida5(web){
+function ValidaWeb(web){
     const res = /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/
     return res.test(web)
 }
-function Valida6(pass)
+function ValidaContrasena(pass)
 {
     if(pass.length>=8 && pass.length <=10)
     {
