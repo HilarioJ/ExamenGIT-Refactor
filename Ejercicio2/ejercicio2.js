@@ -3,7 +3,9 @@ function Ordenar(){
       
         
     while(array.length>=1){
-        CalculaMayorPalabra(array);
+         let indice = CalculaMayorPalabra(array);
+         console.log(array[indice])
+         array.splice(indice, 1)
     }
 }
 
@@ -16,6 +18,5 @@ function CalculaMayorPalabra(array){
             indice = i;
         }
     }
-    console.log(array[indice])
-    array.splice(indice,1);
+        return indice;
 }
