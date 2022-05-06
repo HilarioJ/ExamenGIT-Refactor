@@ -24,8 +24,5 @@ function Grupo (codigo, horario) {
         this.nombre = nombre;
         this.nota = nota;
     }
-       let asir1 = Grupo("ASIR1", "tarde");
-    
-    asir1.matricular("2345", "pepe", 7.8);
-    asir1.matricular("4545", "juan", 9.8);
+       let asir1 = Grupo("ASIR1", "tarde".matricular("2345","pepe", 7.8).matricular("4545", "juan", 9.8));
 }
