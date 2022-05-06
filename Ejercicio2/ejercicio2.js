@@ -13,7 +13,7 @@ function CalculaMayorPalabra(array){
     let mayor = array[0].length;
     let indice;
     for(let i=0;i<array.length;i++){
-        if(array[i].length>=mayor){
+        if(array[i].length > mayor){
             mayor=array[i].length;
             indice = i;
         }
