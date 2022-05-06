@@ -1,3 +1,12 @@
+function creaObjeto(dni, nombre, apellido, email, web, pass){
+    this.dni = dni;
+    this.nombre = nombre;
+    this.apellido=apellido;
+    this.email = email;
+    this.web = web;
+    this.pass = pass;
+}
+
 function ValidaDni(dni){
     const res = /\d{2}\.\d{3}\.\d{3}-[A-Z]$/;
     return res.test(dni);
@@ -26,19 +35,10 @@ function ValidaContrasena(pass)
     {
         valido = true;
     }
-    return valido;
-    
+    return valido;   
+
 }
  
-function creaObjeto(dni, nombre, apellido, email, web, pass){
-    this.dni = dni;
-    this.nombre = nombre;
-    this.apellido=apellido;
-    this.email = email;
-    this.web = web;
-    this.pass = pass;
-}
-
 function Validacion(){
     const dni = document.getElementById("dni").value
     const nombre = document.getElementById("nombre").value
