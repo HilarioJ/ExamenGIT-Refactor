@@ -1,7 +1,7 @@
 function Calcular() {
 
-    var sueldo = parseInt(document.getElementById('sueldo').value);
-    var antiguedad = parseInt(document.getElementById('antiguedad').value);
+    const sueldo = parseInt(document.getElementById('sueldo').value);
+    const antiguedad = parseInt(document.getElementById('antiguedad').value);
 
     if (sueldo < 1000) {
         if (antiguedad > 10) {
