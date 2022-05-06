@@ -1,6 +1,6 @@
 function Ordenar(){
-    var array = [];
-    array = document.getElementById("cadena").value.split(" ");
+    const array = document.getElementById("cadena").value.split(" ");
+      
         
     while(array.length>=1){
         Mayor(array);

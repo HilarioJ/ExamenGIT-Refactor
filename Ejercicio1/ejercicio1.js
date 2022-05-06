@@ -6,7 +6,7 @@ function Calcular() {
      resultado.innerHTML = "El sueldo es " + aumento + "€";
 
 }
-
+/
 function CalcularSueldo(sueldo, antiguedad){
     let aumento = 0;
     if (sueldo < 1000) {
