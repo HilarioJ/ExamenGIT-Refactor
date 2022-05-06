@@ -21,14 +21,13 @@ function ValidaWeb(web){
 }
 function ValidaContrasena(pass)
 {
+    let valido = false;
     if(pass.length>=8 && pass.length <=10)
     {
-        return true;
+        valido = true;
     }
-    else
-    {
-        return false;
-    }
+    return valido;
+    
 }
  
 function creaObjeto(dni, nombre, apellido, email, web, pass){
@@ -37,7 +36,7 @@ function creaObjeto(dni, nombre, apellido, email, web, pass){
     this.apellido=apellido;
     this.email = email;
     this.web = web;
-    this.passw = pass;
+    this.pass = pass;
 }
 
 function Validacion(){
@@ -48,37 +47,37 @@ function Validacion(){
     const web = document.getElementById("web").value
     const pass = document.getElementById("pass").value
  
-    if(!Valida1(dni))
+    if(!ValidaDni(dni))
     {
         console.log("El DNI no es válido")
     }
     else
     {
-        if(!Valida2(nombre))
+        if(!ValidaNombre(nombre))
         {
             console.log("El nombre no es válido")
         }
         else
         {
-            if(!Valida3(apellido))
+            if(!ValidaApellido(apellido))
             {
                 console.log("El apellido no es válido")
             }
             else
             {
-                if(!Valida4(email))
+                if(!ValidaEmail(email))
                 {
                     console.log("El email no es válido")
                 }
                 else
                 {
-                    if(!Valida5(web))
+                    if(!ValidaWeb(web))
                     {
                         console.log("La dirección web no es válida")
                     }
                     else
                     {
-                        if(!Valida6(pass))
+                        if(!ValidaContrasena(pass))
                         {
                             console.log("La contraseña debe tener entre 8 y 10 caracteres")
                         }

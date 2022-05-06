@@ -1,18 +1,16 @@
 function Grupo (codigo, horario) {
-    var grupo = new Object();
     this.codigo = codigo;
-    grupo.horario = horario;
-    grupo.alumnos = [];
+    this.horario = horario;
+    this.alumnos = [];
     
-    grupo.matricular = function matricular (dni, nombre, nota) {
+    this.matricular = function matricular (dni, nombre, nota) {
     this.alumnos.push (Crea (dni, nombre, nota));
     }
     
     function Crea(dni, nombre, nota) {
-        var alum = new Object();
-        alum.dni = dni;
-        alum.nombre = nombre;
-        alum.nota = nota;
+        this.dni = dni;
+        this.nombre = nombre;
+        this.nota = nota;
         return alum;
     }
     
